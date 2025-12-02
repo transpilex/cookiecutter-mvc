@@ -2,8 +2,6 @@
 @{
     var html_attributes = ViewBag.HTMLAttributes ?? "";
     var html_class =  ViewBag.HTMLClass ?? "";
-
-    var body_attributes = ViewBag.BodyAttributes ?? "";
     var body_class = ViewBag.BodyClass ?? "";
 }
 <html lang="en" @html_attributes class="@html_class">
@@ -16,7 +14,7 @@
     @await Html.PartialAsync("~/Views/Shared/Partials/_HeadCss.cshtml")
 </head>
 
-<body @body_attributes class="@body_class">
+<body class="@body_class">
 
 <div class="wrapper">
 
